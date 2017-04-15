@@ -1,44 +1,5 @@
-# React Sortable Tree
+ORIGINAL :[https://github.com/fritz-c/react-sortable-tree](https://github.com/fritz-c/react-sortable-tree)
 
-[![NPM](https://nodei.co/npm/react-sortable-tree.png)](https://npmjs.org/package/react-sortable-tree)
-
-[![tree200](https://cloud.githubusercontent.com/assets/4413963/18860410/26f64de8-84b8-11e6-9284-350308eed30a.png)](https://fritz-c.github.io/react-sortable-tree/)
-
-### [Demo](https://fritz-c.github.io/react-sortable-tree/)
-[![demo](https://cloud.githubusercontent.com/assets/4413963/19334888/2be8261c-913a-11e6-9508-4b347ae114b4.gif)](https://fritz-c.github.io/react-sortable-tree/)
-
-### Features
-
-- Works right out of the box, but is highly customizable
-
-## Example
-
-```jsx
-import React, { Component } from 'react';
-import SortableTree from 'react-sortable-tree';
-
-export default class Tree extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            treeData: [{ title: 'Chicken', children: [ { title: 'Egg' } ] }],
-        };
-    }
-
-    render() {
-        return (
-            <div style={{ height: 400 }}>
-                <SortableTree
-                    treeData={this.state.treeData}
-                    onChange={treeData => this.setState({ treeData })}
-                />
-            </div>
-        );
-    }
-}
-
-```
 
 ## Options
 
@@ -122,7 +83,7 @@ npm start
 npm run lint
 
 # Lints and builds the code, placing the result in the dist directory.
-# This build is necessary to reflect changes if you're 
+# This build is necessary to reflect changes if you're
 #  `npm link`-ed to this repository from another local project.
 npm run build
 ```
